@@ -1,0 +1,522 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family :"SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+body {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.module_content_first {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.transition {
+    height: 12px;
+    width: 100%;
+    background-color: white;
+}
+
+.iphone15pro {
+    background-image: url("iphone15pro.jpg");
+    width: 3008px;
+    height: 736px;
+    background-size: 3008px 736px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.iphone15 {
+    background-color: #f5f5f7;
+}
+
+.texte_iphone15pro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding-top: 99px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.1;
+    letter-spacing: 0.001px;
+}
+
+.h2_iphone15pro {
+    font-size: 56px;
+    font-weight: 600;
+}
+
+.h3_iphone15pro {
+    font-size: 28px;
+    font-weight: 400;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.links_iphone15pro {
+    display: flex;
+    flex-direction: row;
+}
+
+.links_iphone15pro div:nth-of-type(1) {
+    margin: 5px;
+}
+
+.links_iphone15pro div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.savoirplus_iphone15pro {
+    color: #2997ff;
+    text-decoration: none;
+    font-size: 21px;
+}
+
+.cursor_savoir {
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.cursor_savoir:hover {
+    text-decoration: underline;
+    color: #2997ff;
+}
+
+.cursor_savoir_foncé {
+    text-decoration: none;
+    color: #06c;
+    z-index: 2;
+}
+
+.cursor_savoir_foncé:hover {
+    text-decoration: underline;
+    color: #06c;
+}
+
+.cursor_savoir2 {
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.cursor_savoir2:hover {
+    text-decoration: underline;
+    color: #06c;
+}
+
+.fleche {
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    transform: rotate(45deg) translate(2px, 0px);
+    border-top: #2997ff 2px solid;
+    border-right: #2997ff 2px solid;
+}
+
+/*-----------------------------------------------navbar-------------------------------------------*/
+
+nav {
+    background-color: rgba(22, 22, 23, .8);
+    width: 100%;
+    height: 48px;
+    position: fixed;
+    z-index: 9999;
+    right: 0;
+    left: 0;
+}
+
+.content_nav {
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 44px;
+    max-width: 1024px;
+}
+
+ul {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.noms_navbar {
+    padding: 0 8px;
+    height: 44px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #cbcbcb;
+    transition: 0.5s;
+}
+
+svg {
+    fill: #cbcbcb;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.noms_navbar:hover {
+    color: white;
+}
+
+svg:hover {
+    fill: white;
+}
+
+
+/*----------------------------------------------------iphone15--------------------------------------*/
+
+.module_content {
+    position: relative;
+    width: 100%;
+    height: 692px;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.iphone15 {
+    background-image: url("iphone15.jpg");
+    width: 3008px;
+    height: 692px;
+    background-size: 3008px 692px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.texte_iphone15 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 50px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.1;
+    letter-spacing: 0.001px;
+}
+
+.savoirplus_iphone15 {
+    color: #06c;
+    text-decoration: none;
+    font-size: 21px;
+}
+
+.fleche_15 {
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    transform: rotate(45deg) translate(0px, 2px);
+    border-top: #06c 2px solid;
+    border-right: #06c 2px solid;
+}
+
+.acheter {
+    margin-left: 35px;
+}
+
+/*------------------------------------------------------watches------------------------------------*/
+
+.watches {
+    background-image: url("watches.jpg");
+    width: 3008px;
+    height: 736px;
+    background-size: 3008px 736px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.h2_watches {
+    background-image: url("texte_watch.png");
+    width: 189px;
+    height: 73px;
+    background-size: 189px 73px;
+    background-repeat: no-repeat;
+}
+
+.texte_watches {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 70px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.1;
+    letter-spacing: 0.001px;
+}
+
+.h3_watches {
+    font-size: 28px;
+    font-weight: 400;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+/*------------------------------------------------petits blocs---------------------------------*/
+
+
+.petits_blocs {
+    width: calc(100% - 24px);
+    grid-template-columns: 50% 50%;
+    display: grid;
+    grid-gap: 12px;
+    position: relative;
+    left: 12px;
+}
+
+.module_collection {
+    position: relative;
+    height: 580px;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+.watch_fleurs {
+    height: 580px;
+    position: absolute;
+    background-image: url("watch\ fleurs.jpg");
+    width: 1262px;
+    background-size: 1262px 580px;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+}
+
+.texte_watchfleurs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 70px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.1;
+    letter-spacing: 0.001px;
+}
+
+.h2_watchfleurs {
+    background-image: url("watch_fleurs.png");
+    background-size: 146px 33px;
+    height: 33px;
+    width: 146px;
+}
+
+.h3_collection_black {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: black;
+}
+
+.h3_collection {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.savoirplus_collection {
+    color: #2997ff;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.savoirplus_collection_foncé {
+    color: #06c;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+}
+
+.savoirplus_collection_foncé:nth-of-type(1) {
+    padding-right: 30px;
+}
+
+.savoirplus_collection_foncé:nth-of-type(2) {
+    padding-left: 30px;
+}
+
+.savoirplus_collection::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-top: 2px solid #2997ff;
+    border-right: 2px solid #2997ff;
+    transform: rotate(45deg) translate(8px, 2px);
+}
+
+.savoirplus_collection_foncé::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-top: 2px solid #06c;
+    border-right: 2px solid #06c;
+    transform: rotate(45deg) translate(8px, 2px);
+}
+
+.watches_ultra2 {
+    height: 580px;
+    position: absolute;
+    background-image: url("ultra\ watch.jpg");
+    width: 1262px;
+    background-size: 1262px 580px;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+}
+
+.texte_watch2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 70px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.1;
+    letter-spacing: 0.001px;
+}
+
+.h2_watch2 {
+    background-image: url("texte_watch2.png");
+    background-size: 137px 52px;
+    height: 52px;
+    width: 137px;
+}
+
+.macbookpro {
+    height: 580px;
+    position: absolute;
+    background-image: url("macbook\ pro.jpg");
+    width: 1262px;
+    background-size: 1262px 580px;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+}
+
+h4 {
+    font-size: 40px;
+}
+
+.fitness {
+    height: 580px;
+    background-color: rgb(208, 0, 255);
+}
+
+.iPad {
+    height: 580px;
+    position: absolute;
+    background-image: url("ipad.jpg");
+    width: 1262px;
+    background-size: 1262px 580px;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+}
+
+.AirPodsPro {
+    height: 580px;
+    position: absolute;
+    background-image: url("airpodspro.jpg");
+    width: 1262px;
+    background-size: 1262px 580px;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+}
+
+.h2_white {
+    color: white;
+}
+
+.Tradein {
+    height: 580px;
+    position: absolute;
+    background-image: url("tradein.jpg");
+    width: 1262px;
+    background-size: 1262px 580px;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+}
+
+.h2_tradein {
+    background-image: url("tradeintexte.png");
+    background-size: 155px 32px;
+    height: 32px;
+    width: 155px;
+}
+
+.h3_tradein {
+    max-width: 350px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+
+.linkpage {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
